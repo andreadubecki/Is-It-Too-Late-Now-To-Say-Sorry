@@ -1,0 +1,701 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px 20px;
+  max-width: 1280px;
+  background: url(images/tooLateNowbackground.svg);
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4.5em;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.wrapper {
+  max-width: 990px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="text"] {
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+h3 {
+  font-family: 'Patrick Hand SC', cursive;
+  position: relative;
+  bottom: 20px;
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  margin: 10px auto;
+  background: #3c5a72;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  min-height: 150px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label p {
+  padding: 30px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin: 10px 10px;
+  background: lightblue;
+  padding: 10px;
+}
+
+.nameOptions {
+  padding: 20px;
+  background: lightblue;
+  margin: 20px 10px;
+}
+
+.nameOptions input {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.nameOptions p {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.apologyOptions {
+  background: lightblue;
+  color: black;
+  margin: 15px;
+  padding: 40px;
+}
+
+.theOptions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theOptions label {
+  width: calc(33% - 20px);
+  margin: 10px auto;
+  background: #3c5a72;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.theOptions label.optionChanges {
+  background: maroon;
+  color: white;
+}
+
+.relationship {
+  background: lightblue;
+  color: black;
+  margin: 20px 10px;
+  padding: 40px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.relationshipOptions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.relationshipOptions label {
+  width: calc(30% - 20px);
+  background: #3c5a72;
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 10px;
+  color: white;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.relationshipOptions label.optionChanges {
+  background: maroon;
+  color: white;
+}
+
+.happenAgain {
+  background: lightblue;
+  color: black;
+  margin: 15px;
+  padding: 20px;
+}
+
+.frequencyOptions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.happenAgain label {
+  width: calc(30% - 20px);
+  margin: 10px;
+}
+
+.happenAgain label.optionChanges {
+  background: maroon;
+  color: white;
+}
+
+.sorrySection {
+  margin: 10px;
+  background: lightblue;
+  color: black;
+  padding: 40px;
+}
+
+.sorryTypes {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.sorryTypes label {
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+.sorryTypes label.optionChanges {
+  background: maroon;
+  color: white;
+}
+
+input[type=submit] {
+  background: #3c5a72;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.inputSection a {
+  display: block;
+  text-decoration: none;
+}
+
+.submitContainer {
+  padding: 40px;
+  background: lightblue;
+  display: inline-block;
+}
+
+.letterSection {
+  display: none;
+  margin: 10px;
+  background: #e8f4f8;
+  color: black;
+  padding: 20px;
+  text-align: left;
+  border: 10px solid #3c5a72;
+}
+
+.letterSection p {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 auto;
+  line-height: 38px;
+  padding: 20px 10px;
+}
+
+.bottomSubmit {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  background: lightblue;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer span {
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer p {
+  color: black;
+  letter-spacing: 1px;
+}
+
+.social {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.twitterBtn {
+  margin-left: 5px;
+}
+
+@media print {
+  * {
+    display: none;
+  }
+  html {
+    display: block;
+  }
+  body {
+    display: block;
+  }
+  main {
+    display: block;
+  }
+  form {
+    display: block;
+  }
+  form .wrapper:nth-of-type(2) {
+    display: block;
+  }
+  form .wrapper:nth-of-type(2) * {
+    display: block;
+  }
+  form .wrapper:nth-of-type(2) .generatedLetter {
+    display: block;
+  }
+  form .wrapper:nth-of-type(2) .bottomSubmit {
+    display: none;
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 860px) {
+  .apologyOptions {
+    margin: 10px;
+  }
+  .relationshipOptions label {
+    width: calc(50% - 20px);
+  }
+  .happenAgain {
+    margin: 10px;
+  }
+  .happenAgain label {
+    width: calc(50% - 20px);
+  }
+  .sorryTypes {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .sorryTypes label {
+    width: calc(45% - 5px);
+  }
+  input[type="submit"] {
+    padding: 40px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: white;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  .theOptions label {
+    width: calc(33% - 10px);
+    margin: 5px auto;
+  }
+  .apologyOptions label p {
+    padding: 10px;
+  }
+  .letterSection p {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 530px) {
+  body {
+    padding: 0px;
+  }
+  .apologyOptions {
+    padding: 3%;
+  }
+  .relationship {
+    padding: 3%;
+  }
+  .happenAgain {
+    padding: 3%;
+  }
+  .sorrySection {
+    padding: 3%;
+  }
+}
+
+@media (max-width: 468px) {
+  h1 {
+    font-size: 3.33em;
+    padding: 40px 0;
+    margin-bottom: 0;
+  }
+  h3 {
+    display: none;
+  }
+  .nameOptions input {
+    padding: 5px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .theOptions {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .theOptions label {
+    width: calc(31%);
+    min-height: 130px;
+  }
+  .apologyOptions label p {
+    font-size: 14px;
+  }
+  .relationship {
+    padding: 3%;
+  }
+  .relationship label {
+    width: calc(31%);
+    min-height: 130px;
+  }
+  .happenAgain {
+    padding: 3%;
+  }
+  .happenAgain label {
+    width: calc(50%);
+    min-height: 130px;
+  }
+  .sorrySection {
+    padding: 3%;
+  }
+  .sorryTypes label {
+    width: calc(35%);
+    min-height: 130px;
+  }
+  .bottomSubmit {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  .letterSection input[type="submit"] {
+    font-size: 14px;
+    width: 80%;
+    text-align: justify;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .theOptions {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .theOptions label {
+    margin: 5px auto;
+    width: 100%;
+    min-height: 60px;
+  }
+  .relationship label {
+    width: 90%;
+    min-height: 60px;
+    margin: 5px auto;
+  }
+  .frequencyOptions {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .happenAgain label {
+    width: 100%;
+    margin: 5px auto;
+    min-height: 60px;
+  }
+  .happenAgain label p {
+    padding: 0;
+  }
+  .sorryTypes label {
+    width: 90%;
+    margin: 5px auto;
+    min-height: 60px;
+  }
+  input[type="submit"] {
+    padding: 30px;
+  }
+  .letterSection {
+    padding: 10px;
+    text-align: left;
+    border: 5px solid #3c5a72;
+  }
+  .letterSection p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
